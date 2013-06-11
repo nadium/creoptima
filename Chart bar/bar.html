@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="bar.css">
+
+</head>
+<body>
+	<script>var data = [4, 30, 55, 16, 93, 42];
+
+var chart = d3.select("body").append("div")
+    .attr("class", "chart");
+
+    chart.selectAll("div")
+    .data(data)
+ 	.enter().append("div")
+    .style("width", function(d) { return d * 10 + "px"; })
+    .text(function(d) { return d; });
+</script>
+	
+
+toto
+
+</body>
+</html>

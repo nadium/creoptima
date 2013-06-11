@@ -181,3 +181,84 @@ footer .footer_wrapper span:nth-child(2){
 footer .footer_wrapper span:nth-child(3){
 	float:right;
 }
+
+
+
+
+
+
+/* RADAR CHART
+************************************************/
+
+nav{
+	height: 87px;
+	width: 100%;
+	background-color: #363636;
+}
+
+nav li{
+	color:white;
+	display: inline-block;
+	margin-left:40px;
+	text-transform: uppercase;
+	font-family: FuturaBook;
+	font-size: 30px;
+}
+
+nav ul{
+		float: right;
+
+}
+.wrap{
+	margin:0 auto;
+	width:960px;
+}
+
+nav li a{
+	color:white;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: FuturaBook;
+	font-size: 30px;
+	text-decoration: none;
+	padding-top:31px;
+	height: 49px;
+	
+
+}
+
+nav li a:hover, .selected{
+	border-bottom: 7px solid #eaa33d;
+}
+
+#logomini{
+	background-image:url(img/logo.png);
+	background-size: 76px 49px;
+	background-repeat: no-repeat;
+	background-position: 0 13px;
+	height:49px;
+	width: 300px;
+	float: left;
+	margin-left: 82px;
+	display: inline-block;
+	font-family: GothamBold;
+	font-size: 30px;
+	color: white;
+	padding-left: 80px;
+	padding-top:25px;
+}
+
+#radarh1{
+	text-align: center;
+	font-size: 40px;
+	font-family: FuturaBook;
+	margin-top: 60px;
+}
+
+#radarh2{
+	text-align: center;
+	font-size: 18px;
+	font-family: FuturaBook;
+	color: #585858;
+	margin-top: 35px;
+}
