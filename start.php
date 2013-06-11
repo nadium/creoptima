@@ -29,6 +29,53 @@
 				<canvas id="canvas" height="600" width="600"></canvas>
 				
 			</div>
+
+<?php 
+include('db.php');
+
+$sqlannee="SELECT DISTINCT annee FROM data ORDER BY annee ASC";
+$resannee=mysql_query($sqlannee);
+
+
+echo '<ul>';
+
+while ($tabannee=mysql_fetch_array($resannee)){
+
+
+	echo '<li>'.$tabannee['annee'].'</li>';
+
+
+	}
+	echo '</ul>';
+
+
+
+$sqlannee2="SELECT DISTINCT annee FROM data ORDER BY annee ASC";
+$resannee2=mysql_query($sqlannee2);
+
+
+echo '<ul>';
+
+while ($tabannee2=mysql_fetch_array($resannee2)){
+
+
+	$sqlnaiss="SELECT SUM(naissance) FROM data WHERE annee=".$tabannee2['annee'];
+	$resnaissance=mysql_query($sqlnaiss);
+
+	// echo $sqlnaiss;
+
+	while ($tabnaiss=mysql_fetch_array($resnaissance)){
+
+			echo '<li>'.substr($tabnaiss[0], 0, 3).'k</li>';
+
+
+	}
+}
+
+echo '</ul>';
+ ?>
+
+			
 		</div>
 	</div>
 	
@@ -61,35 +108,6 @@
 	
 	</script>
 
-<table>
-	
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr><td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td></tr>
-
-</table>
 
 
 
