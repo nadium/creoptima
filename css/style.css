@@ -284,3 +284,19 @@ nav li a:hover, .selected{
 	width: 108px;
 }
 
+.wrap ul
+{
+    list-style-type:none;
+    text-align:center;
+}
+.wrap li
+{
+    display:inline;
+    margin-left: 5px;
+}
+.wrap li:not(:last-child):after
+{
+    content:' |';
+}
+
+
