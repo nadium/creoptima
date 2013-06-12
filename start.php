@@ -42,7 +42,7 @@
 			echo '<ul>';
 
 			while ($tabannee=mysql_fetch_array($resannee)){
-				echo '<li><a href="#">'.$tabannee['annee'].'</a></li>';
+				echo '<li><a href="start.php?y='.$tabannee['annee'].'">'.$tabannee['annee'].'</a></li>';
 			}
 			echo '</ul>';
 
@@ -66,8 +66,21 @@
 
 			echo '</ul>';
 
-			?>
 
+
+			if (isset($_GET['y'])){
+				$year=$_GET['y'];
+				//echo $year;
+
+				$sqlget="SELECT naissance FROM data WHERE annee=".$year;
+				$resget= mysql_connect($sqlget);
+
+				echo $sqlget;
+
+			}
+			
+
+ ?>
 
 		</div>
 	</div>
@@ -79,7 +92,7 @@
 			<span>Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A propos</span>	
 		</div>
 	</footer>
-	
+
 	</body>
 	<script src="js/script.js"></script>
 </html>
