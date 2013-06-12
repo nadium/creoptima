@@ -301,3 +301,10 @@ nav li a:hover, .selected{
 	color: #000;
 	text-decoration: none
 }
+
+.premier{
+	color:rgba(163,61,61,1);
+}
+.deux{
+	color:rgba(234,163,61,1);
+}

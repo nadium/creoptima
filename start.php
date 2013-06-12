@@ -93,7 +93,7 @@
 
 
 <script>
-function graphique(d){
+function graphique(annee1,annee2){
 	var radarChartData = {
 		labels : ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Decembre"],
 		datasets : [
@@ -102,36 +102,63 @@ function graphique(d){
 				strokeColor : "rgba(163,61,61,1)",
 				pointColor : "rgba(0,0,0,1)",
 				pointStrokeColor : "#000",
-				data : d
+				data : annee2
 			},
 			{
 				fillColor : "rgba(151,187,205,0)",
 				strokeColor : "rgba(234,163,61,1)",
 				pointColor : "rgba(0,0,0,1)",
 				pointStrokeColor : "#000",
-				data : d
+				data : annee1
 			}
 		]
 		
 	}
 
-var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : true, pointLabelFontSize : 10});
+var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : true, pointLabelFontSize : 16});
 }
 
 $(document).ready(function(){
-  var donnees;
+  var donnees = [60,60,60,60,60,60,60,60,60,60,60,60];
+  graphique(donnees,donnees);
+
+  var li1,test;
   $('li.anneeget').click(function(){
-	  $.ajax({
-		  url: "getsql.php?y="+$(this).attr('id'),
-		  success: function(data, textStatus, jqXHR){
-		  // alert(data);
-		  // alert(textStatus);
-		  // alert(jqXHR);
-		  	graphique(data);
-		  }
-	  })
+
+  if(!test || $(this).attr('id') != test.attr('id')){
+
+ 	if($('li').hasClass('deux') && $('li').hasClass('premier')){
+ 	 $(this).removeClass('deux')
+ 	 $('li.premier').removeClass('premier')
+ 	 $('li.deux').removeClass('deux')
+ 	 li1.addClass('premier')
+ 	 li1 = $(this)
+ 	 $(this).addClass('deux')
+ 	} else if(!$('li').hasClass('deux') && $('li').hasClass('premier')){
+ 	  
+ 	 $(this).addClass('deux')
+ 	 $(this).removeClass('premier')
+ 	 li1 = $(this)
+ 	} else if(!$('li').hasClass('deux') && !$('li').hasClass('premier')){
+ 	 $(this).addClass('premier')
+
+  }
+ 	$.ajax({
+ 	 url: "getsql.php?y="+$(this).attr('id'),
+ 	 success: function(data, textStatus, jqXHR){
+ 	 graphique(data.split(','), donnees);
+ 	 donnees = data.split(',');
+ 	 }
+ 	})
+ 	test = $(this)
+  }
+
+
+
   })
+
 })
+
 
 
 </script>

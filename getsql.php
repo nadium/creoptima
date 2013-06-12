@@ -7,7 +7,7 @@ include ('db.php');
 				$sqlget="SELECT * FROM data WHERE annee=".$year." ORDER BY mois ASC";
 				$resget= mysql_query($sqlget);
 
-echo'[';
+
 				$i=0;
 				while ($tabget=mysql_fetch_array($resget)){
 
@@ -21,7 +21,7 @@ echo'[';
 
 
 				}
-echo']';
+
 
 
 			
