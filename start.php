@@ -31,10 +31,12 @@
 				<canvas id="canvas" height="600" width="600"></canvas>	
 			</div>
 
-			<?php 
+<?php 
+
 		//Liste des années
 			$sqlannee="SELECT DISTINCT annee FROM data ORDER BY annee ASC";
 			$resannee=mysql_query($sqlannee);
+
 
 
 			echo '<ul>';
@@ -62,6 +64,7 @@
 				}
 			}
 
+
 			echo '</ul>';
 
 
@@ -76,7 +79,15 @@
 				echo $sqlget;
 
 			}
-			?>	
+			
+
+
+	
+
+
+echo '</ul>';
+ ?>
+
 		</div>
 	</div>
 
