@@ -7,6 +7,7 @@
 	<title>Creoptima</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="js/Chart.js"></script>
 </head>
 <body>
@@ -42,8 +43,13 @@
 			echo '<ul>';
 
 			while ($tabannee=mysql_fetch_array($resannee)){
-				echo '<li><a href="start.php?y='.$tabannee['annee'].'">'.$tabannee['annee'].'</a></li>';
+				echo 
+				'<li class="anneeget" id='.$tabannee['annee'].'>'
+					.$tabannee['annee'].
+				'</li>';
 			}
+
+
 			echo '</ul>';
 
 
@@ -67,17 +73,6 @@
 			echo '</ul>';
 
 
-
-			if (isset($_GET['y'])){
-				$year=$_GET['y'];
-				//echo $year;
-
-				$sqlget="SELECT naissance FROM data WHERE annee=".$year;
-				$resget= mysql_connect($sqlget);
-
-				echo $sqlget;
-
-			}
 			
 
  ?>
@@ -93,6 +88,54 @@
 		</div>
 	</footer>
 
+
+
+
+
+<script>
+function graphique(d){
+	var radarChartData = {
+		labels : ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Decembre"],
+		datasets : [
+			{
+				fillColor : "rgba(220,220,220,0)",
+				strokeColor : "rgba(163,61,61,1)",
+				pointColor : "rgba(0,0,0,1)",
+				pointStrokeColor : "#000",
+				data : d
+			},
+			{
+				fillColor : "rgba(151,187,205,0)",
+				strokeColor : "rgba(234,163,61,1)",
+				pointColor : "rgba(0,0,0,1)",
+				pointStrokeColor : "#000",
+				data : d
+			}
+		]
+		
+	}
+
+var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : true, pointLabelFontSize : 10});
+}
+
+$(document).ready(function(){
+  var donnees;
+  $('li.anneeget').click(function(){
+	  $.ajax({
+		  url: "getsql.php?y="+$(this).attr('id'),
+		  success: function(data, textStatus, jqXHR){
+		  // alert(data);
+		  // alert(textStatus);
+		  // alert(jqXHR);
+		  	graphique(data);
+		  }
+	  })
+  })
+})
+
+
+</script>
+
+
 	</body>
-	<script src="js/script.js"></script>
 </html>
