@@ -42,7 +42,7 @@ echo '<ul>';
 while ($tabannee=mysql_fetch_array($resannee)){
 
 
-	echo '<li>'.$tabannee['annee'].'</li>';
+	echo '<li><a href="#">'.$tabannee['annee'].'</a></li>';
 
 
 	}
@@ -75,7 +75,7 @@ while ($tabannee2=mysql_fetch_array($resannee2)){
 echo '</ul>';
  ?>
 
-			
+
 		</div>
 	</div>
 	
