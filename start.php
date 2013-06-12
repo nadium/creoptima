@@ -11,7 +11,7 @@
 </head>
 <body>
 	<nav>
-		<a href="http://localhost/git/creoptima"><div id="logomini">Creoptima</div></a>
+		<a href="/"><div id="logomini">Creoptima</div></a>
 		<div class="wrap">
 			<ul>
 				<li><a href="#" class="selected">Events</a></li>
@@ -31,7 +31,7 @@
 				<canvas id="canvas" height="600" width="600"></canvas>	
 			</div>
 
-<?php 
+			<?php 
 
 		//Liste des années
 			$sqlannee="SELECT DISTINCT annee FROM data ORDER BY annee ASC";
@@ -64,13 +64,9 @@
 				}
 			}
 
+			echo '</ul>';
 
-	}
-}
-
-echo '</ul>';
- ?>
-
+			?>
 
 
 		</div>
