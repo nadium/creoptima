@@ -233,7 +233,7 @@ window.Chart = function(context){
 			datasetStrokeWidth : 2,
 			datasetFill : true,
 			animation : true,
-			animationSteps : 60,
+			animationSteps : 100,
 			animationEasing : "easeOutQuart",
 			onAnimationComplete : null
 		};

@@ -266,36 +266,38 @@ nav li a:hover, .selected{
 
 .texture{
 	background:url('img/texture.png');
+	padding-top:60px;
 }
 
-.wrap div:first-child{
-	padding-top:60px;
-}	
-.wrap div:nth-child(2){
+.texture div:nth-child(2){
 	text-align: center;
 }	
 #centre{
 	background: url('img/center.png') no-repeat 0 0;
 	display: inline-block;
 	height: 108px;
-	left: 586px;
+	left: 604px;
 	position: absolute;
-	top: 486px;
+	top: 505px;
 	width: 108px;
 }
 
-.wrap ul
+.texture ul
 {
-    list-style-type:   none;
-    text-align:        center;
+    list-style-type:none;
+    text-align:center;
 }
-.wrap li
+.texture li
 {
-    display:           inline;
+    display:inline;
     margin-left: 5px;
 }
-.wrap li:not(:last-child):after
+.texture li:not(:last-child):after
 {
-    content:           ' |';
+    content:' |';
 }
 
+.texture ul li a{
+	color: #000;
+	text-decoration: none
+}
