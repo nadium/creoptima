@@ -14,7 +14,12 @@
 <?php 
 include('db.php');
 
-$sqltaux='SELECT * FROM meteo WHERE region="Alsace" OR region="Ile-de-France"';
+$sqltaux=' SELECT * FROM meteo WHERE annee="2005" AND region="Alsace" OR region="Ile-de-France" and annee="2005""';
+$restaux=mysql_query($sqltaux);
+
+echo $sqltaux;
+
+//$pluie
 
  ?>
 
