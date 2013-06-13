@@ -27,32 +27,34 @@
 				<h1 id="radarh1">WEATHER EFFECTS ON FERTILITY</h1>
 			</div>
 			<div id="ensoleillement">
-				<h2>Jours ensoleillés</h2>
+				
 				<ul>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					
 				</ul>
 			</div>
+
 			<div id="pluie">
 				<ul>
 					<li>jour</li>

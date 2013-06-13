@@ -14,6 +14,11 @@
     font-family: FuturaExtraBold;
     src: url(fonts/FuturaStd-ExtraBold.otf);
 }
+
+@font-face {
+    font-family: FuturaMedium;
+    src: url(fonts/FuturaStd-Medium.otf);
+}
 @font-face {
     font-family: FuturaHeavy;
     src: url(fonts/FuturaStd-Heavy.otf);
@@ -346,11 +351,40 @@ canvas{
 #meteo .texture li:not(:last-child):after
 {	content: "";
 }
+
+#ensoleillement ul{
+	display: inline;
+	width: 803px;
+}
+#ensoleillement li:first-child {
+	border-left: 1px solid #000;
+}
 #ensoleillement li {
 	border-right: 1px solid #000;
-	font-family: FuturaBook;
-	height:300px;
+	background-color:#ffd97d;
+	display: inline-block;
+	font-family: FuturaMedium;
+	margin-left: -4px;
+	height: 300px;
+	text-align: center;
 	width: 36px;
+
+}
+#ensoleillement li div.barre{
+	background:url('img/texture.png');
+}
+#ensoleillement li div.pushbottom{
+	padding-top: 265px;
+}
+#ensoleillement li div.region{
+	
+	display: block;
+	height: 35px;
+	-webkit-transform:  rotate(-90deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+	
 }
 
 

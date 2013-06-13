@@ -100,11 +100,10 @@
  
  
 <script>
-function graphique(annee1,annee2){
+function graphique(annee1,annee2,event1,event2){
     var radar = new RGraph.Radar('canvas',annee2,annee1)
         .Set('labels', ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"])
-        .Set('tooltips', ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre",
-            "Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]) //Hover
+        .Set('tooltips', event1.concat(event2)) //Hover
         .Set('key.colors','rgba(0,0,0,1')
         .Set('background.circles.poly', true)
         .Set('background.circles.spacing', 30)
@@ -117,8 +116,9 @@ function graphique(annee1,annee2){
 }
  
 $(document).ready(function(){
- var donnees = [50000,50000,50000,50000,50000,50000,50000,50000,50000,50000,50000,50000];
-  graphique(donnees,donnees);
+ var naissanceG = [0,0,0,0,0,0,0,0,0,0,0,0];
+ var eventsG = ["vide","vide","vide","vide","vide","vide","vide","vide","vide","vide","vide","vide"];
+  graphique(naissanceG,naissanceG,eventsG,eventsG);
  
   var li1,test;
   $('li.anneeget').click(function(){
@@ -144,20 +144,25 @@ $(document).ready(function(){
         $.ajax({
                 url: "getsql.php?y="+$(this).attr('id'),
                 success: function(data, textStatus, jqXHR){
-                        donnees_naissance = []
-                        for(var i= 0; i < data.split(',').length; i++){
-                                donnees_naissance[i] = parseInt(data.split(',')[i])
+                        donnees = data.split('----')
+                        naissance = []
+                        events = []
+                        for(var i= 0; i < data.length-1; i++){
+                                if(donnees[i]){
+                                        naissance[i] = parseInt(donnees[i].split('-_-')[2])
+                                        events[i] = donnees[i].split('-_-')[1]+" -> "+parseInt(donnees[i].split('-_-')[2])+" bébés"
+                                        console.log(donnees[i].split('-_-')[0]+' '+events[i]+': '+donnees[i].split('-_-')[2])
+                                }
                         }
                         RGraph.Reset(document.getElementById('canvas'))
-                        graphique(donnees_naissance, donnees);
-                        donnees = donnees_naissance;
+                        graphique(naissanceG,naissance,eventsG,events);
+                        naissanceG = naissance
+                        eventsG = events
                 }
         })
         test = $(this)
   }
- 
- 
- 
+
   })
  
 })
