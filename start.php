@@ -15,8 +15,8 @@
 		<a href="/"><div id="logomini">Creoptima</div></a>
 		<div class="wrap">
 			<ul>
-				<li><a href="start.php" class="selected">Events</a></li>
-				<li><a href="meteo.php">Weather</a></li>
+				<li><a href="start.php" class="selected">Evenement</a></li>
+				<li><a href="meteo.php">Meteo</a></li>
 			</ul> 
 		</div>	
 	</nav>
