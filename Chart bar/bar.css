@@ -1,4 +1,5 @@
 .chart div {
+-webkit-transform:rotate(90deg);
   font: 10px sans-serif;
   background-color: steelblue;
   text-align: right;
