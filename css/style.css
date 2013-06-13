@@ -294,6 +294,7 @@ nav li a:hover, .selected{
 }
 .texture li:not(:last-child):after
 {
+	color:#000;
     content:' |';
 }
 
