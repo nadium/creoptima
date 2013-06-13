@@ -17,7 +17,7 @@
  
         <script src="js/Chart.js"></script>
 </head>
-<body>
+<body id="start">
         <nav>
                 <a href="/"><div id="logomini">Creoptima</div></a>
                 <div class="wrap">
@@ -32,7 +32,7 @@
                 <div class="wrap">
                         <div>
                                 <h1 id="radarh1"> L'EFFET DES EVENEMENTS SUR LA FERTILITE</h1>
-                                <h2 id="radarh2">Chaques années les données sont mensuellement présentées avec une vision globale depuis 2002 </h2>
+                                <h2 id="radarh2"> Les données sont présentées par mois avec une vision globale de chaque année depuis 2002 </h2>
                         </div>
                         <div>
                                 <div id="centre">&nbsp;</div>

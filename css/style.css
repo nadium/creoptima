@@ -274,7 +274,7 @@ nav li a:hover, .selected{
 	padding-top:60px;
 }
 
-.texture div:nth-child(2){
+#start .texture div:nth-child(2){
 	height: 575px;
 	text-align: center;
 }	
@@ -334,8 +334,8 @@ canvas{
 ************************************************/
 #ensoleillement{
 	margin-top: 77px;
-
-
+	margin-left: 87px;
+	margin-bottom: 60px;
 }
 #ensoleillement h2{
 	float: left;
@@ -352,11 +352,11 @@ canvas{
 {	content: "";
 }
 
-#ensoleillement ul{
+#ensoleillement ul, #pluie ul{
 	display: inline;
 	width: 803px;
 }
-#ensoleillement li:first-child {
+#ensoleillement li:first-child, #pluie li:first-child {
 	border-left: 1px solid #000;
 }
 #ensoleillement li {
@@ -372,14 +372,51 @@ canvas{
 }
 #ensoleillement li div.barre{
 	background:url('img/texture.png');
+	height: 100px;
 }
 #ensoleillement li div.pushbottom{
 	padding-top: 265px;
 }
 #ensoleillement li div.region{
-	
 	display: block;
 	height: 35px;
+	line-height: 32px;
+	-webkit-transform:  rotate(-90deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+	
+}
+#frise{
+	background:url('img/frise.png') no-repeat 0 0;
+	height: 38px;
+	margin-left: 46px;
+	margin-bottom:60px;
+	width: 898px
+}
+
+#pluie{
+	margin-left:87px;
+}
+#pluie ul{
+
+}
+#pluie li {
+	border-right: 1px solid #000;
+	background:url("img/texture.png");
+	display: inline-block;
+	font-family: FuturaMedium;
+	margin-left: -4px;
+	height: 300px;
+	text-align: center;
+	width: 36px;
+
+}
+
+#pluie li div.region{
+	display: block;
+	height: 35px;
+	line-height: 32px;
 	-webkit-transform:  rotate(-90deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -387,4 +424,7 @@ canvas{
 	
 }
 
-
+#pluie li div.barre{
+	background-color:#b6dcf3;
+	height: 100px;
+}

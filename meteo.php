@@ -50,35 +50,36 @@
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
-					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">fatmeteoeoeoee</div></div></div></li>
 					
 				</ul>
 			</div>
-
+			<div id="frise">&nbsp;</div>
 			<div id="pluie">
-				<ul>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
-					<li>jour</li>
+					<ul>
+					<li><div class="barre"><div class="pushbottom"><div class="region">fatmeteoeoeoee</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
+					
 				</ul>
 			</div>
 				
