@@ -270,15 +270,16 @@ nav li a:hover, .selected{
 }
 
 .texture div:nth-child(2){
+	height: 575px;
 	text-align: center;
 }	
 #centre{
 	background: url('img/center.png') no-repeat 0 0;
 	display: inline-block;
 	height: 108px;
-	left: 604px;
-	position: absolute;
-	top: 505px;
+	left: 427px;
+	position: relative;
+	top: -271px;
 	width: 108px;
 }
 
@@ -290,12 +291,12 @@ nav li a:hover, .selected{
 .texture li
 {
     display:inline;
-    margin-left: 5px;
+	font-family:Garamond;
 }
 .texture li:not(:last-child):after
 {
 	color:#000;
-    content:' |';
+    content:' | ';
 }
 
 .texture ul li a{
@@ -312,6 +313,15 @@ nav li a:hover, .selected{
 
 .anneeget{
 	cursor: pointer;
+}
+
+canvas{
+	margin-top: 49px;
+	margin-right: 97px;
+}
+
+.wrap ul:nth-child(4){
+	padding-bottom:100px;
 }
 
 

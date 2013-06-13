@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<script src="js/RGraphLibraries/RGraph.common.core.js" ></script>
+    <script src="js/RGraphLibraries/RGraph.common.dynamic.js" ></script>
+    <script src="js/RGraphLibraries/RGraph.common.effects.js" ></script>
+    <script src="js/RGraphLibraries/RGraph.common.tooltips.js" ></script>
+    <script src="js/RGraphLibraries/RGraph.radar.js" ></script>
+
 	<script src="js/Chart.js"></script>
 </head>
 <body>
@@ -15,8 +22,8 @@
 		<a href="/"><div id="logomini">Creoptima</div></a>
 		<div class="wrap">
 			<ul>
-				<li><a href="start.php" class="selected">Evenement</a></li>
-				<li><a href="meteo.php">Meteo</a></li>
+				<li><a href="start.php" class="selected">Évènement</a></li>
+				<li><a href="meteo.php">Météo</a></li>
 			</ul> 
 		</div>	
 	</nav>
@@ -29,7 +36,7 @@
 			</div>
 			<div>
 				<div id="centre">&nbsp;</div>
-				<canvas id="canvas" height="600" width="600"></canvas>	
+				<canvas id="canvas" height="500" width="700"></canvas>	
 			</div>
 
 			<?php 
@@ -94,28 +101,20 @@
 
 <script>
 function graphique(annee1,annee2){
-	var radarChartData = {
-		labels : ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Decembre"],
-		datasets : [
-			{
-				fillColor : "rgba(220,220,220,0)",
-				strokeColor : "rgba(163,61,61,1)",
-				pointColor : "rgba(0,0,0,1)",
-				pointStrokeColor : "#000",
-				data : annee2
-			},
-			{
-				fillColor : "rgba(151,187,205,0)",
-				strokeColor : "rgba(234,163,61,1)",
-				pointColor : "rgba(0,0,0,1)",
-				pointStrokeColor : "#000",
-				data : annee1
-			}
-		]
-		
-	}
-
-var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : true, pointLabelFontSize : 16});
+    var radar = new RGraph.Radar('canvas',annee2,annee1)
+        .Set('labels', ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"])
+        .Set('tooltips', ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre",
+            "Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"]) //Hover
+        .Set('key.colors','rgba(0,0,0,1')
+        .Set('background.circles.poly', true) 
+        .Set('background.circles.spacing', 30)
+        .Set('colors', ['transparent','transparent']) //background
+        .Set('axes.color', 'transparent') //Axes vertical horizontal
+        .Set('highlights', true) //Affichage des points 
+        .Set('strokestyle', ['rgba(163,61,61,1)','rgba(234,163,61,1)']) //Ligne couleur
+       
+    RGraph.Effects.Radar.Grow(radar);
+        
 }
 
 $(document).ready(function(){
@@ -144,11 +143,11 @@ $(document).ready(function(){
 
   }
  	$.ajax({
- 	 url: "getsql.php?y="+$(this).attr('id'),
- 	 success: function(data, textStatus, jqXHR){
- 	 graphique(data.split(','), donnees);
- 	 donnees = data.split(',');
- 	 }
+		url: "getsql.php?y="+$(this).attr('id'),
+		success: function(data, textStatus, jqXHR){
+			graphique(data.split(','), donnees);
+			donnees = data.split(',');
+ 		}
  	})
  	test = $(this)
   }
