@@ -309,3 +309,7 @@ nav li a:hover, .selected{
 .deux{
 	color:rgba(234,163,61,1);
 }
+
+.anneeget{
+	cursor: pointer;
+}
