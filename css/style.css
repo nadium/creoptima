@@ -327,7 +327,30 @@ canvas{
 
 /* METEO
 ************************************************/
+#ensoleillement{
+	margin-top: 77px;
 
 
+}
+#ensoleillement h2{
+	float: left;
+	font-family: FuturaBook;
+	font-size: 24px;
+	padding-bottom: 175px;
+	text-transform:uppercase;
+	-webkit-transform:  rotate(-90deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#meteo .texture li:not(:last-child):after
+{	content: "";
+}
+#ensoleillement li {
+	border-right: 1px solid #000;
+	font-family: FuturaBook;
+	height:300px;
+	width: 36px;
+}
 
 

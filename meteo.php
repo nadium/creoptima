@@ -10,7 +10,7 @@
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="js/Chart.js"></script>
 </head>
-<body>
+<body id="meteo">
 	<nav>
 		<a href="/"><div id="logomini">Creoptima</div></a>
 		<div class="wrap">
@@ -26,7 +26,59 @@
 			<div>
 				<h1 id="radarh1">WEATHER EFFECTS ON FERTILITY</h1>
 			</div>
-
+			<div id="ensoleillement">
+				<h2>Jours ensoleillés</h2>
+				<ul>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+				</ul>
+			</div>
+			<div id="pluie">
+				<ul>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+					<li>jour</li>
+				</ul>
+			</div>
 				
 
 
