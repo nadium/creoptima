@@ -15,8 +15,8 @@
 		<a href="/"><div id="logomini">Creoptima</div></a>
 		<div class="wrap">
 			<ul>
-				<li><a href="#" class="selected">Events</a></li>
-				<li><a href="#">Weather</a></li>
+				<li><a href="start.php" class="selected">Events</a></li>
+				<li><a href="meteo.php">Weather</a></li>
 			</ul> 
 		</div>	
 	</nav>
@@ -24,8 +24,8 @@
 	<div class="texture">
 		<div class="wrap">
 			<div>
-				<h1 id="radarh1">EVENTS EFFECTS ON FERTILITY</h1>
-				<h2 id="radarh2">Datas are presented monthly with a global views of every year since 2002</h2>
+				<h1 id="radarh1"> L'EFFET DES EVENEMENTS SUR LA FERTILITE</h1>
+				<h2 id="radarh2">Chaques années les données sont mensuellement présentées avec une vision globale depuis 2002 </h2>
 			</div>
 			<div>
 				<div id="centre">&nbsp;</div>
