@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 13 Juin 2013 à 23:21
+-- Généré le: Jeu 13 Juin 2013 à 23:26
 -- Version du serveur: 5.5.29
 -- Version de PHP: 5.4.10
 
@@ -22,8 +22,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `meteo` (
   `id` int(3) DEFAULT NULL,
-  `region` int(4) DEFAULT NULL,
-  `annee` varchar(26) DEFAULT NULL,
+  `annee` int(4) DEFAULT NULL,
+  `region` varchar(26) DEFAULT NULL,
   `soleil` int(3) DEFAULT NULL,
   `pluie` int(3) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -32,7 +32,7 @@ CREATE TABLE `meteo` (
 -- Contenu de la table `meteo`
 --
 
-INSERT INTO `meteo` (`id`, `region`, `annee`, `soleil`, `pluie`) VALUES
+INSERT INTO `meteo` (`id`, `annee`, `region`, `soleil`, `pluie`) VALUES
 (1, 2013, 'Alsace', 16, 51),
 (2, 2013, 'Aquitaine', 28, 67),
 (3, 2013, 'Auvergne', 21, 60),

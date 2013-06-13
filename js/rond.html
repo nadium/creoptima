@@ -11,7 +11,12 @@
 	</head>
 	<body>
 		<canvas id="canvas" height="450" width="450"></canvas>
+<?php 
+include('db.php');
 
+$sqltaux='SELECT * FROM meteo WHERE region="Alsace" OR region="Ile-de-France"';
+
+ ?>
 
 	<script>
 
