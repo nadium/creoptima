@@ -22,10 +22,10 @@
         <nav>
                 <a href="/"><div id="logomini">Creoptima</div></a>
                 <div class="wrap">
-                        <ul>
-                                <li><a href="start.php" class="selected">Évènement</a></li>
-                                <li><a href="meteo.php">Météo</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="start.php" class="selected">Évènement</a></li>
+                        <li><a href="meteo.php">Météo</a></li>
+                    </ul>
                 </div> 
         </nav>
  
@@ -151,7 +151,7 @@ $(document).ready(function(){
                         for(var i= 0; i < data.length-1; i++){
                                 if(donnees[i]){
                                         naissance[i] = parseInt(donnees[i].split('-_-')[2])
-                                        events[i] = donnees[i].split('-_-')[1]+" -> "+parseInt(donnees[i].split('-_-')[2])+" bébés"
+                                        events[i] = donnees[i].split('-_-')[1]+" -> "+parseInt(donnees[i].split('-_-')[2])+" naissances"
                                         console.log(donnees[i].split('-_-')[0]+' '+events[i]+': '+donnees[i].split('-_-')[2])
                                 }
                         }

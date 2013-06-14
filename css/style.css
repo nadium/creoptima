@@ -282,7 +282,7 @@ nav li a:hover, .selected{
 	background: url('img/center.png') no-repeat 0 0;
 	display: inline-block;
 	height: 108px;
-	left: 427px;
+	left: 428px;
 	position: relative;
 	top: -271px;
 	width: 108px;
@@ -321,7 +321,7 @@ nav li a:hover, .selected{
 	cursor: pointer;
 }
 
-canvas{
+#start canvas{
 	margin-top: 49px;
 	margin-right: 97px;
 }
@@ -334,9 +334,9 @@ canvas{
 /* METEO
 ************************************************/
 #ensoleillement{
-	margin-top: 77px;
+	margin-top: 20px;
 	margin-left: 87px;
-	margin-bottom: 60px;
+	margin-bottom: 33px;
 }
 #ensoleillement h2{
 	float: left;
@@ -382,6 +382,11 @@ canvas{
 	display: block;
 	height: 35px;
 	line-height: 32px;
+	position: relative;
+	right: 71px;
+	text-align: left;
+	bottom: 78px;
+	width: 177px;
 	-webkit-transform:  rotate(-90deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -390,14 +395,15 @@ canvas{
 }
 #frise{
 	background:url('img/frise.png') no-repeat 0 0;
-	height: 38px;
+	height: 60px;
 	margin-left: 46px;
-	margin-bottom:60px;
+	margin-bottom:8px;
 	width: 898px
 }
 
 #pluie{
 	margin-left:87px;
+	padding-bottom: 70px;
 }
 #pluie ul{
 
@@ -418,6 +424,11 @@ canvas{
 	display: block;
 	height: 35px;
 	line-height: 32px;
+	width: 170px;
+	right: 68px;
+	top: 91px;
+	text-align: right;
+	position: relative;
 	-webkit-transform:  rotate(-90deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -428,4 +439,77 @@ canvas{
 #pluie li div.barre{
 	background-color:#b6dcf3;
 	height: 100px;
+}
+
+#etat-soleil{
+	background: url('img/soleil.png') no-repeat 217px 3px;
+	font-family: FuturaMedium;
+	font-size: 24px;
+	position: relative;
+	display: block;
+	line-height: 64px;
+	height: 63px;
+	right: 475px;
+	bottom: 116px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+#etat-pluie{
+	background: url('img/pluie.png') no-repeat 177px 10px;
+	font-family: FuturaMedium;
+	font-size: 24px;
+	position: relative;
+	display: block;
+	line-height: 64px;
+	height: 63px;
+	right: 475px;
+	bottom: 116px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+#comparaison{
+	padding-bottom: 100px;
+}
+#comparaison canvas{
+	float: left;
+	margin-left: 51px;
+}
+
+#comparaison div{
+	font-family: FuturaMedium;
+	font-size: 30px;
+	
+}
+#cns{
+	margin-bottom: 31px;
+}
+#comparaison div.stats{
+	font-family: FuturaBold;
+	position: relative;
+	top: 240px;
+	font-size: 30px;
+	left: 179px;
+}
+.baby{
+	background:url('img/baby.png') no-repeat 0 0;
+	float:left;
+	height: 87px;
+	width: 126px;
+}
+.nomregion{
+	float:left;
+}
+.nomregion:first-child{
+	margin-left: 181px;
+}
+.nomregion:nth-child(2){
+	margin-left: 274px;
+}
+.clear{
+	clear:both;
 }
