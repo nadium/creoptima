@@ -5,6 +5,7 @@
 <head>
         <meta charset="UTF-8">
         <title>Creoptima</title>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -102,7 +103,7 @@
 <script>
 function graphique(annee1,annee2,event1,event2){
     var radar = new RGraph.Radar('canvas',annee2,annee1)
-        .Set('labels', ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"])
+        .Set('labels', ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Decembre"])
         .Set('tooltips', event1.concat(event2)) //Hover
         .Set('key.colors','rgba(0,0,0,1')
         .Set('background.circles.poly', true)

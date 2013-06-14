@@ -296,7 +296,8 @@ nav li a:hover, .selected{
 .texture li
 {
     display:inline;
-	font-family:Garamond;
+    font-size: 14px;
+	font-family:'Titillium Web', sans-serif;
 }
 .texture li:not(:last-child):after
 {
@@ -375,7 +376,7 @@ canvas{
 	height: 100px;
 }
 #ensoleillement li div.pushbottom{
-	padding-top: 265px;
+	padding-top: 250px;
 }
 #ensoleillement li div.region{
 	display: block;
