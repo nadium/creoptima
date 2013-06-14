@@ -1,4 +1,6 @@
-<?php include('db.php');?>
+<?php 
+include('db.php');
+?>
 
 <!doctype html>
 <html lang="en">
@@ -29,6 +31,24 @@
 			<div id="ensoleillement">
 				
 				<ul>
+<?php 
+
+$sqlregion='SELECT region FROM meteo;';
+$resregion=mysql_query($sqlregion);
+$numregion=mysql_num_rows($resregion);
+
+echo $numregion;
+
+$i=0;
+while ($tabregion=mysql_fetch_array($resregion)) {
+	
+//echo $i;
+
+$i++;
+}
+
+ ?>
+<!-- 
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
@@ -51,7 +71,7 @@
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
 					<li><div class="barre"><div class="pushbottom"><div class="region">jour</div></div></div></li>
 					<li><div class="barre"><div class="pushbottom"><div class="region">fatmeteoeoeoee</div></div></div></li>
-					
+ -->					
 				</ul>
 			</div>
 			<div id="frise">&nbsp;</div>
