@@ -33,17 +33,15 @@ include('db.php');
 				<ul>
 <?php 
 
-$sqlregion='SELECT region FROM meteo;';
+$sqlregion='SELECT DISTINCT region FROM meteo;';
 $resregion=mysql_query($sqlregion);
 $numregion=mysql_num_rows($resregion);
 
-echo $numregion;
 
 $i=0;
 while ($tabregion=mysql_fetch_array($resregion)) {
 	
-//echo $i;
-
+echo '<li><div class="barre"><div class="pushbottom"><div class="region">'.$tabregion['region'].'</div></div></div></li>';
 $i++;
 }
 
